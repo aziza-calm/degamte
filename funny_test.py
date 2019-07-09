@@ -42,7 +42,7 @@ def start_test():
 	antwort = tk.StringVar()
 	fr1_entry = tk.Entry(test, width=40, textvariable=antwort, validatecommand=callback(antwort))
 	fr1_entry.pack()
-	#fr1_entry.bind("<Return>", check)
+
 	bCheck = tk.Button(test, text="Prüfen", command=lambda: check(test, fr1_entry.get()))
 	bCheck.pack()
 
